@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* align-items: end; aligns items at the bottom of the container */
+
+
+.flex-container-6 {
+  /* In these examples we use a 400 pixels height container, to better demonstrate the align-items property. */
+  height: 400px;
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  align-items: end;
+}
+
+.item6 {
+  width: 100px;
+  height: 100px;
+  background: white;
+  color: black;
+  margin: 10px;
+}
+
+/* align-items: center; aligns items in the center of the container */
+
+
+.flex-container-7 {
+  height: 400px;
+  display: flex;
+  background-color: red;
+  justify-content: center;
+  align-items: end;
+}
+
+.item7 {
+  width: 100px;
+  height: 100px;
+  background: yellow;
+  color: black;
+  margin: 10px;
+}
+
+
+.flex-container-8 {
+  height: 400px;
+  display: flex;
+  background-color: blue;
+  justify-content: space-between;
+  align-items: end;
+}
+
+
+.item8 {
+  width: 100px;
+  height: 100px;
+  background: orange;
+  color: black;
+  margin: 10px;
+}
+
+/* Aligning only one item. Use nth-of-type (). the number inside the parenthesis indicate which item to style. align-items: start;  */
+
+.item8:nth-of-type(1) {
+  align-self: start;
+}
+
+.item8:nth-of-type(2) {
+  align-self: center;
+}
+
+.item8:nth-of-type(3) {
+  align-self: end;
+}
+
+h1 {
+  text-align: center;
+  padding: 15px;
+}
+h3 {
+  text-align: center;
+}
